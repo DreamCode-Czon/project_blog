@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About page</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Blog About page</h3>
+
+        {% for post in variable%}
+
+        <h1>{{post.title}}</h1>
+        <p>By: {{post.author}} on {{post.date_posted}}</p>
+        <p>{{post.content}}</p>
+
+        {%endfor%}
+
+
+    </div>
+
+</body>
+
+</html>
